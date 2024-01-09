@@ -1,0 +1,62 @@
+Total, Suma
+Order, Zamówienie
+Sku, SKU (Kod produktu)
+Continue to shipping, Kontynuuj do dostawy
+Continue shopping, Kontynuuj zakupy
+Continue Shopping, Kontynuuj zakupy
+CONTINUE SHOPPING, KONTYNUUJ ZAKUPY
+Shopping cart, Koszyk
+Product, Produkt
+Price, Cena
+Quantity, Ilość
+Remove, Usuń
+Qty, Ilość
+Subtotal, Suma częściowa
+Discount(${coupon}), Zniżka(${coupon})
+Order summary, Podsumowanie zamówienia
+Taxes and shipping calculated at checkout, Podatki i koszty dostawy są obliczane przy kasie
+CHECKOUT, ZAKOŃCZ ZAKUPY
+Change, Zmień
+Payment Method, Metoda płatności
+Shipping Address, Adres dostawy
+Shipping Method, Metoda dostawy
+No payment methods available, Brak dostępnych metod płatności
+Place Order, Złóż zamówienie
+My billing address is the same as the shipping address, Mój adres do rozliczeń jest taki sam jak adres dostawy
+${count} items, ${count} pozycji
+Discount, Zniżka
+Shipping, Dostawa
+No tax, Bez podatku
+Tax, Podatek
+Sorry, there is no available method for your address, Przepraszamy, nie ma dostępnej metody dla Twojego adresu
+Please enter a shipping address to see shipping quotes, Proszę podać adres dostawy, aby zobaczyć koszty dostawy
+Continue to payment, Kontynuuj do płatności
+No payment method available, Brak dostępnej metody płatności
+Ship to, Wysłać do
+Shipment, Dostawa
+Thank you ${name}!, Dziękujemy, ${name}!
+Contact information, Informacje kontaktowe
+Order #${orderNumber}, Zamówienie #${orderNumber}
+ADD TO CART, DODAJ DO KOSZYKA
+Please select variant options, Proszę wybrać opcje wariantu
+VIEW CART (${count}), ZOBACZ KOSZYK (${count})
+JUST ADDED TO YOUR CART, WŁAŚNIE DODANO DO KOSZYKA
+Promotion code?, Kod promocyjny?
+Enter coupon code, Wprowadź kod kuponu
+Apply, Zastosuj
+Your cart is empty!, Twój koszyk jest pusty!
+Full name, Imię i Nazwisko
+Telephone, Telefon
+Address, Adres
+City, Miasto
+Country, Kraj
+Postcode, Kod pocztowy
+Inclusive of tax, Włącznie z podatkiem
+Sorry, there is no available method for your address, Przepraszamy, nie ma dostępnej metody dla Twojego adresu.
+Full name is required, Pełne imię i nazwisko jest wymagane
+Telephone is required, Numer telefonu jest wymagany
+Address is required, Adres jest wymagany
+City is required, Miasto jest wymagane
+Country is required, Kraj jest wymagany
+Postcode is required, Kod pocztowy jest wymagany
+Contact, Kontakt
