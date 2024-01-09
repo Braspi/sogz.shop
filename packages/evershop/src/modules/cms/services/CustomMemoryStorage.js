@@ -32,6 +32,4 @@ CustomMemoryStorage.prototype._removeFile = function _removeFile(
   cb(null);
 };
 
-module.exports = function (opts) {
-  return new CustomMemoryStorage(opts);
-};
+module.exports = (opts)=> new CustomMemoryStorage(opts);

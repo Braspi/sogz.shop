@@ -21,25 +21,23 @@ function getAllFilesInFolder(folderPath) {
       // Recursively call the function to get the files in the subdirectory
       const subResults = getAllFilesInFolder(itemPath);
       results = { ...results, ...subResults };
-    } else {
+    } else if(
+      (/.js$/.test(item) && /^[A-Z]/.test(item[0])) ||
+      /\.(css|scss)$/i.test(item)
+    ) {
       // Add the file path to the results array if it is a Component or SCSS file
-      if (
-        (/.js$/.test(item) && /^[A-Z]/.test(item[0])) ||
-        /\.(css|scss)$/i.test(item)
-      ) {
-        const pathParts = itemPath.split(path.sep);
+      const pathParts = itemPath.split(path.sep);
 
-        // Find the index of the "components" directory
-        const componentsIndex = pathParts.indexOf('components');
+      // Find the index of the "components" directory
+      const componentsIndex = pathParts.indexOf('components');
 
-        // Return the part of the path after the "components" directory
-        const alias = path
-          .join('@components', ...pathParts.slice(componentsIndex + 1))
-          .replace('.js', '')
-          .replace('.scss', '')
-          .replace('.css', '');
-        results[alias] = itemPath;
-      }
+      // Return the part of the path after the "components" directory
+      const alias = path
+        .join('@components', ...pathParts.slice(componentsIndex + 1))
+        .replace('.js', '')
+        .replace('.scss', '')
+        .replace('.css', '');
+      results[alias] = itemPath;
     }
   }
 

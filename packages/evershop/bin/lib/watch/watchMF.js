@@ -3,7 +3,7 @@ const { Handler } = require('@evershop/evershop/src/lib/middleware/Handler');
 const { error } = require('@evershop/evershop/src/lib/log/debuger');
 const { broadcash } = require('./broadcash');
 
-module.exports.watchMF = function (event, path) {
+module.exports.watchMF = (event, path) => {
   // Check if path include graphql/types
   if (
     !path.includes(normalize('pages/admin')) &&

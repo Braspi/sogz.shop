@@ -20,7 +20,6 @@ let app = createApp();
 const server = http.createServer(app);
 
 module.exports.start = async function start(cb) {
-  console.log(process.env.NODE_ENV);
   const modules = [...getCoreModules(), ...getEnabledExtensions()];
 
   /** Migration */

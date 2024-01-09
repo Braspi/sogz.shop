@@ -47,7 +47,7 @@ function hookable(originalFunction, context) {
   }
   return new Proxy(originalFunction, {
     apply: isAsyncFunction(originalFunction)
-      ? async function (target, thisArg, argumentsList) {
+      ? async (target, thisArg, argumentsList)=> {
           const beforeHookFunctions = beforeHooks.get(funcName) || [];
           const afterHookFunctions = afterHooks.get(funcName) || [];
 
@@ -75,7 +75,7 @@ function hookable(originalFunction, context) {
 
           return result;
         }
-      : function (target, thisArg, argumentsList) {
+      : (target, thisArg, argumentsList) => {
           const beforeHookFunctions = beforeHooks.get(funcName) || [];
           const afterHookFunctions = afterHooks.get(funcName) || [];
 

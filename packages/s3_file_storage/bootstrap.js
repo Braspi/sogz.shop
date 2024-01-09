@@ -5,7 +5,7 @@ const { awsFileBrowser } = require('./services/awsFileBrowser');
 const { awsFolderCreator } = require('./services/awsFolderCreator');
 
 module.exports = () => {
-  addProcessor('fileUploader', function (value) {
+  addProcessor('fileUploader', (value) => {
     const {config} = this;
     if (config === 's3') {
       return awsFileUploader;
@@ -14,7 +14,7 @@ module.exports = () => {
     }
   });
 
-  addProcessor('fileDeleter', function (value) {
+  addProcessor('fileDeleter', (value)=> {
     const {config} = this;
     if (config === 's3') {
       return awsFileDeleter;
@@ -23,7 +23,7 @@ module.exports = () => {
     }
   });
 
-  addProcessor('folderCreator', function (value) {
+  addProcessor('folderCreator', (value)=> {
     const {config} = this;
     if (config === 's3') {
       return awsFolderCreator;
@@ -32,7 +32,7 @@ module.exports = () => {
     }
   });
 
-  addProcessor('fileBrowser', function (value) {
+  addProcessor('fileBrowser', (value) => {
     const {config} = this;
     if (config === 's3') {
       return awsFileBrowser;

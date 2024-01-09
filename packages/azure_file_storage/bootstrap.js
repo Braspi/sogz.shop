@@ -5,7 +5,7 @@ const { azureFolderCreator } = require('./services/azureFolderCreator');
 const { azureFileBrowser } = require('./services/azureFileBrowser');
 
 module.exports = () => {
-  addProcessor('fileUploader', function (value) {
+  addProcessor('fileUploader',  (value) => {
     const {config} = this;
     if (config === 'azure') {
       return azureFileUploader;
@@ -14,7 +14,7 @@ module.exports = () => {
     }
   });
 
-  addProcessor('fileDeleter', function (value) {
+  addProcessor('fileDeleter', (value) => {
     const {config} = this;
     if (config === 'azure') {
       return azureFileDeleter;
@@ -23,7 +23,7 @@ module.exports = () => {
     }
   });
 
-  addProcessor('folderCreator', function (value) {
+  addProcessor('folderCreator', (value) => {
     const {config} = this;
     if (config === 'azure') {
       return azureFolderCreator;
@@ -32,7 +32,7 @@ module.exports = () => {
     }
   });
 
-  addProcessor('fileBrowser', function (value) {
+  addProcessor('fileBrowser', (value) => {
     const {config} = this;
     if (config === 'azure') {
       return azureFileBrowser;
