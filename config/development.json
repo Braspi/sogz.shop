@@ -1,0 +1,16 @@
+{
+  "shop": {
+    "currency": "PLN",
+    "weightUnit": "kg",
+    "language": "pl"
+  },
+  "themeConfig": {
+    "logo": {
+      "alt": "Shop logo",
+      "src": "https://cdn.yshop.pl/files/a2a12a37-e046-4549-b5f3-4f96441d9ec9.png",
+      "width": 150,
+      "height": 100
+    },
+    "copyright": "© 2024 sogz.shop All Rights Reserved."
+  }
+}
